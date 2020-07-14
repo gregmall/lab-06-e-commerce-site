@@ -1,10 +1,10 @@
 const PBR = {
     id: 'beer',
     name: 'Pabst',
-    image: 'assets/pbr.png',
+    image: 'assets/pbr.jpg',
     description: 'A cheap beer with a hipster reputation',
     category: 'american-lager',
-    price: 2.00,
+    price: 2.00
     
 };
 
@@ -47,5 +47,7 @@ const Hamms = {
     price: 1.50
 
 };
+const beers = [PBR, Carlsburg, SierraNevada, Modelo, Hamms];
 
 
+export default beers;

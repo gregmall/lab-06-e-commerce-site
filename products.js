@@ -1,10 +1,10 @@
-mport fruits from '../data/fruits.js';
-import renderFruit from './render-fruit.js';
+import beers from './beers.js';
+import renderBeer from './render-beer.js';
 
-const list = document.getElementById('fruits');
+const list = document.getElementById('beers');
 
-for (let i = 0; i < fruits.length; i++) {
-    const fruit = fruits[i];
-    const el = renderFruit(fruit);
-    list.appendChild(el);
+for (let i = 0; i < beers.length; i++) {
+    const beer = beers[i];
+    const el = renderBeer(beer);
+    list.append(el);
 }
