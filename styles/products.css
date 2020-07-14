@@ -1,0 +1,60 @@
+
+body {
+  
+    
+    font-family: 'Titillium Web', sans-serif;
+    background-image: url(/assets/beerflow.gif);
+
+
+
+}
+header {
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 30px
+}
+nav {
+    background-color: white;
+    width: 100px;
+
+}
+
+
+#beer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+h2 {
+    font-size: 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+#beer  li {
+    background-color:white;
+    border: solid 2px black;
+    padding: 10px;
+    margin: 10px;
+}
+
+#beer li img {
+    height: 200px;
+    width: 200px;
+}
+
+
+
+content {
+    width: 80%;
+}
+
+p {
+    margin: var(--gutter);
+}
+  
+
+  
