@@ -21,6 +21,7 @@ test('renders beers', expect => {
         
     };
     const expected = '<li class="american-lager" title="A cheap beer with a hipster reputation"><h3>Pabst</h3><img src="assets/pbr.jpg" alt="Pabst image"><p class="price">$2.00<button value="beer">Add</button></p></li>';
+   
     //Act 
     // Call the function you're testing and set the result to a const
     const dom = renderBeer(PBR);

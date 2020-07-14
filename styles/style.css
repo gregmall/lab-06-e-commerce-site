@@ -17,22 +17,29 @@ body {
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
     --footer-height: 25px;
-    
+    background-color: lightyellow;
     font-family: 'Titillium Web', sans-serif;
-    background-col
+    
 }
 
 main {
+    background-image: url(/assets/beerstore.jpeg);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: calc(var(--footer-height));
+    
 }
 
+.centered{
+    font-size: 25px;
+    color: black;
+    font-style: bold;
+    font-family: cursive;
+}
 section {
-    background-color: var(--color5);
-    width: 1000px;
+    background-image: url(/assets/beerfront.jpg);
+    width: 500px;
     max-width: 80%;
     display: flex;
     flex-direction: column;
@@ -42,23 +49,24 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    border: solid 2px black;
 }
 
 header {
-    text-align: center;
-    display: flex;
-    justify-content: center
-    background-color: var(--color3);
-    height: var(--header-height);
-    box-shadow: var(--shadow);
+   justify-content: center;
+   text-align: center;
+
+}
+
+.buylink {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
 }
 
 
-
-
-h2 {
-    font-size: 1.8rem;
+h1 {
+    
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -66,10 +74,13 @@ h2 {
     margin-right: 20px;
 }
 
-
-header img {
-    height: var(--header-height);
+.buybeer{
+    font-size: 30px;
+    text-decoration: blink;
+    background-color: lime;
+    box-shadow: 5px 10px #888888;
 }
+
 
 
 
@@ -83,21 +94,4 @@ p {
   
 
   
-  @keyframes pulse {
-    20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
-    }
-
-    40% {
-        transform: rotate3d(10, 10, -10, 50deg) scale(1);
-    }
-
-    60% {
-        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
-
-    80% {
-        transform: rotate3d(10, 10, 10, 50deg) scale(1);
-    }
-
-  }
+ 
