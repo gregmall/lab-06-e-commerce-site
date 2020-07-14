@@ -1,5 +1,5 @@
 const PBR = {
-    id: 'beer',
+    id: 'pabst',
     name: 'Pabst',
     image: 'assets/pbr.jpg',
     description: 'A cheap beer with a hipster reputation',
@@ -9,7 +9,7 @@ const PBR = {
 };
 
 const Carlsburg = {
-    id: 'beer',
+    id: 'carlsburg',
     name: 'Carslburg',
     image: 'assets/carlsburg.jpg',
     description: 'A Danish pilsner style beer.  Very popular',
@@ -20,7 +20,7 @@ const Carlsburg = {
 };
 
 const SierraNevada = {
-    id: 'beer',
+    id: 'sierra',
     name: 'Sierra Nevada',
     image: 'assets/sierra.jpg',
     description: 'An american style Pale Ale',
@@ -31,7 +31,7 @@ const SierraNevada = {
 };
 
 const Modelo = {
-    id: 'beer',
+    id: 'modelo',
     name: 'Modelo',
     image: 'assets/modelo.jpg',
     description: 'A mexican style lager beer',
@@ -40,7 +40,7 @@ const Modelo = {
 };
 
 const Hamms = {
-    id: 'beer',
+    id: 'hamms',
     name: 'Hamms',
     image: 'assets/hamms.jpg',
     description: 'An american cheap beer.  DRINK IT',

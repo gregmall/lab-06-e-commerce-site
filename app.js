@@ -1,7 +1,7 @@
 // import functions and grab DOM elements
-import { renderBeer } from './render-beer.js';
+import { renderBeer } from './products/render-beer.js';
 
-import beers from './beers.js';
+import beers from '../data/beers.js';
 
 const beerList = document.querySelector('#beer');
 console.log(beers);
@@ -15,4 +15,5 @@ for (let i = 0; i < beers.length; i ++)
 
 
 }
-    
+
+

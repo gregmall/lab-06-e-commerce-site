@@ -1,0 +1,73 @@
+
+body {
+  
+    
+    font-family: 'Titillium Web', sans-serif;
+    background-color: red;
+
+
+
+}
+header {
+    text-align: center;
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 50px
+    
+}
+nav {
+    background-color: white;
+    width: 100px;
+
+}
+
+
+#beer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+h2 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+.buydiv{
+    justify-content: center;
+}
+.buy{
+    font-size: 30px;
+    background-color: lime;
+    box-shadow: 5px 10px #888888;
+}
+#beer  li {
+    background-color:white;
+    border: solid 2px black;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 5px 10px #888888;
+}
+
+#beer li img {
+    height: 200px;
+    width: 200px;
+}
+.home {
+    background-color: lime;
+    font-size: 25px;
+    box-shadow: 5px 10px #888888;
+}
+
+
+content {
+    width: 80%;
+}
+
+p {
+    margin: var(--gutter);
+}
+
+
+  

@@ -1,6 +1,6 @@
 // Function to render a new instance of product to the page
 
-export function renderBeer(beer) {
+function renderBeer(beer) {
     const li = document.createElement('li');
     const h3Li = document.createElement('h3');
     h3Li.textContent = beer.name;
@@ -33,4 +33,5 @@ export function renderBeer(beer) {
 
     return li;
 }
+export default renderBeer;
 
