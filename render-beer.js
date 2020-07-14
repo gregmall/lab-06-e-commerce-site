@@ -1,3 +1,5 @@
+// Function to render a new instance of product to the page
+
 export function renderBeer(beer) {
     const li = document.createElement('li');
     const h3Li = document.createElement('h3');

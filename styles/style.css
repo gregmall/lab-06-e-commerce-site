@@ -31,6 +31,12 @@ main {
     
 }
 
+.centered{
+    font-size: 25px;
+    color: black;
+    font-style: bold;
+    font-family: cursive;
+}
 section {
     background-image: url(/assets/beerfront.jpg);
     width: 500px;
@@ -68,6 +74,12 @@ h1 {
     margin-right: 20px;
 }
 
+.buybeer{
+    font-size: 30px;
+    text-decoration: blink;
+    background-color: lime;
+    box-shadow: 5px 10px #888888;
+}
 
 
 
