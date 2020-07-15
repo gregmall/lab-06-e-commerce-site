@@ -7,9 +7,10 @@ export function renderBeer(beer) {
     li.append(h3Li);
 
     li.classList.add(beer.category);
-    const title = beer.description;
-    li.title = title;
-    li.append(title);
+    
+    li.title = beer.description;
+    
+    li.append(h3Li);
     const p = document.createElement('p');
 
     p.className = 'price';
@@ -18,7 +19,7 @@ export function renderBeer(beer) {
   
    
     const imgLi = document.createElement('img');
-    imgLi.src = beer.image;
+    imgLi.src = '../assets/' + beer.image;
     imgLi.alt = beer.name + ' image';
     li.append(imgLi);
 
@@ -29,8 +30,13 @@ export function renderBeer(beer) {
     
     p.textContent = usd;
     
-  
+    const button = document.createElement('button');
+    button.textContent = 'Add To Cart';
+    button.value = beer.code;
+    p.append(button);
+    li.append(p);
 
     return li;
 }
+export default renderBeer;
 

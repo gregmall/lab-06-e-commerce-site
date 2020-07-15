@@ -1,0 +1,67 @@
+
+body {
+    max-width: 400px;
+    
+    font-family: 'Titillium Web', sans-serif;
+    
+    
+
+
+
+}
+header {
+    
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 40px
+    
+}
+
+table {
+    
+    
+    border: 1px solid black;
+}
+thead {
+    background-color: seagreen;
+}
+
+table td {
+    text-align: right;
+    padding: 10px;
+    border: 2px solid black;
+}
+table th {
+    
+    text-align: right;
+    padding: 10px;
+    border: 2px solid black;
+
+}
+
+.align-left {
+    text-align: left;
+}
+
+tbody {
+    background: white;
+}
+
+
+
+tbody td {
+    font-size: 0.9rem;
+}
+
+.line-item-total {
+    font-style: bold;
+}
+
+tfoot {
+   
+   background-color: white;
+}
+.button {
+    background-color: seagreen;
+    font-size: 20px;
+}

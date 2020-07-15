@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-// import { }
-import { renderBeer } from '../render-beer.js';
+
+import { renderBeer } from '../products/render-beer.js';
 const test = QUnit.test;
 
 QUnit.module('Render Beer');
@@ -13,14 +13,14 @@ test('renders beers', expect => {
         
         id: 'beer',
         name: 'Pabst',
-        image: 'assets/pbr.jpg',
+        image: 'pbr.jpg',
         description: 'A cheap beer with a hipster reputation',
         category: 'american-lager',
         price: 2.00
         
         
     };
-    const expected = '<li class="american-lager" title="A cheap beer with a hipster reputation"><h3>Pabst</h3><img src="assets/pbr.jpg" alt="Pabst image"><p class="price">$2.00<button value="beer">Add</button></p></li>';
+    const expected = '<li class="american-lager" title="A cheap beer with a hipster reputation"><h3>Pabst</h3><img src="../assets/pbr.jpg" alt="Pabst image"><p class="price">$2.00<button value="undefined">Add To Cart</button></p></li>';
    
     //Act 
     // Call the function you're testing and set the result to a const
