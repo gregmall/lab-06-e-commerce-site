@@ -1,6 +1,6 @@
 // Function to render a new instance of product to the page
 
-function renderBeer(beer) {
+ export function renderBeer(beer) {
     const li = document.createElement('li');
     const h3Li = document.createElement('h3');
     h3Li.textContent = beer.name;
@@ -10,7 +10,7 @@ function renderBeer(beer) {
     
     li.title = beer.description;
     
-    li.append(h3);
+    li.append(h3Li);
     const p = document.createElement('p');
 
     p.className = 'price';
@@ -30,7 +30,11 @@ function renderBeer(beer) {
     
     p.textContent = usd;
     
-  
+    const button = document.createElement('button');
+    button.textContent = 'Add To Cart';
+    button.value = beer.code;
+    p.append(button);
+    li.append(p);
 
     return li;
 }
