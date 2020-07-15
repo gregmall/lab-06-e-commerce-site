@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-// import { }
+
 import { renderBeer } from '../products/render-beer.js';
 const test = QUnit.test;
 
