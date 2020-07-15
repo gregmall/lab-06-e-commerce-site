@@ -3,7 +3,8 @@ body {
     max-width: 400px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: red;
+    
+    
 
 
 
@@ -12,20 +13,30 @@ header {
     
     font-family: fantasy;
     font-weight: bold;
-    font-size: 50px
+    font-size: 40px
     
 }
 
 table {
     
     
-    border: 1px solid black;-color: white;
+    border: 1px solid black;
+}
+thead {
+    background-color: seagreen;
 }
 
-table th, table td {
+table td {
     text-align: right;
     padding: 10px;
     border: 2px solid black;
+}
+table th {
+    
+    text-align: right;
+    padding: 10px;
+    border: 2px solid black;
+
 }
 
 .align-left {
@@ -43,7 +54,7 @@ tbody td {
 }
 
 .line-item-total {
-    font-weight: bolder;
+    font-style: bold;
 }
 
 tfoot {
