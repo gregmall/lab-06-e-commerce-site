@@ -15,7 +15,7 @@ test('finds beer by its id', assert => {
    
     const expected = 'Pabst';
 
-   const findBeer = findById(array, id);
+    const findBeer = findById(array, id);
   
   
     //Expect

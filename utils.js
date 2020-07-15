@@ -22,7 +22,7 @@ export function orderTotal(cart, beers){
 
 export function calcTotal(quantity, price){
     
-    console.log(quantity, price);
+    
     
     const total = Number(quantity) * Number(price);
     return total;
