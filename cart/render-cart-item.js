@@ -1,3 +1,4 @@
+// This functions renders the cart items
 export function renderCartItem(lineItem, beer) {
     const tr = document.createElement('tr');
 

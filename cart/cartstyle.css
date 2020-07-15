@@ -9,65 +9,52 @@ body {
 
 }
 header {
-    text-align: center;
+    
     font-family: fantasy;
     font-weight: bold;
     font-size: 50px
     
 }
-nav {
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #aaa;
+}
+
+thead {
+   
     background-color: white;
-    width: 100px;
-
 }
 
-
-#beer {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
-h2 {
-    font-size: 50px;
-    justify-content: center;
-    text-align: center;
-}
-
-.buydiv{
-    justify-content: center;
-}
-.buy{
-    font-size: 30px;
-    background-color: lime;
-    box-shadow: 5px 10px #888888;
-}
-#beer  li {
-    background-color:white;
-    border: solid 2px black;
+table th, table td {
+    text-align: right;
     padding: 10px;
-    margin: 10px;
-    box-shadow: 5px 10px #888888;
+    border: 2px solid black;
 }
 
-#beer li img {
-    height: 200px;
-    width: 200px;
+.align-left {
+    text-align: left;
 }
-.home {
-    background-color: lime;
-    font-size: 25px;
-    box-shadow: 5px 10px #888888;
+
+tbody {
+    background: white;
 }
 
 
-content {
-    width: 80%;
+
+tbody td {
+    font-size: 0.9rem;
 }
 
-p {
-    margin: var(--gutter);
+.line-item-total {
+    font-weight: bolder;
 }
 
-
-  
+tfoot {
+   
+   background-color: white;
+}
+.button {
+    background-color: seagreen;
+    font-size: 20px;
+}
