@@ -1,7 +1,7 @@
 const PBR = {
     id: 'pabst',
     name: 'Pabst',
-    image: 'assets/pbr.jpg',
+    image: 'pbr.jpg',
     description: 'A cheap beer with a hipster reputation',
     category: 'american-lager',
     price: 2.00
@@ -11,7 +11,7 @@ const PBR = {
 const Carlsburg = {
     id: 'carlsburg',
     name: 'Carslburg',
-    image: 'assets/carlsburg.jpg',
+    image: 'carlsburg.jpg',
     description: 'A Danish pilsner style beer.  Very popular',
     category: 'pilsner',
     price: 4.00
@@ -22,7 +22,7 @@ const Carlsburg = {
 const SierraNevada = {
     id: 'sierra',
     name: 'Sierra Nevada',
-    image: 'assets/sierra.jpg',
+    image: 'sierra.jpg',
     description: 'An american style Pale Ale',
     category: 'microbrew',
     price: 3.50
@@ -33,7 +33,7 @@ const SierraNevada = {
 const Modelo = {
     id: 'modelo',
     name: 'Modelo',
-    image: 'assets/modelo.jpg',
+    image: 'modelo.jpg',
     description: 'A mexican style lager beer',
     price: 3.00
 
@@ -42,7 +42,7 @@ const Modelo = {
 const Hamms = {
     id: 'hamms',
     name: 'Hamms',
-    image: 'assets/hamms.jpg',
+    image: 'hamms.jpg',
     description: 'An american cheap beer.  DRINK IT',
     price: 1.50
 
