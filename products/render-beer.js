@@ -1,6 +1,8 @@
 // Function to render a new instance of product to the page
 
-export function renderBeer(beer) {
+import { findById } from '../utils.js';
+import { getCart } from '../utils.js';
+function renderBeer(beer) {
     const li = document.createElement('li');
     const h3Li = document.createElement('h3');
     h3Li.textContent = beer.name;
@@ -33,6 +35,29 @@ export function renderBeer(beer) {
     const button = document.createElement('button');
     button.textContent = 'Add To Cart';
     button.value = beer.code;
+    button.addEventListener('click', () =>{
+        console.log('ID: ', beer.id);
+        const cart = getCart();
+        const beerInCart = findById(cart, beer.id);
+
+        if (beerInCart) {
+            beerInCart.quantity ++;
+
+        } else {
+            const newBeer = {
+                id: beer.id,
+                quantity: 1
+
+            };
+            cart.push(newBeer);
+        }
+
+            const stringCart = JSON.stringify(cart);
+            localStorage.setItem('CART', stringCart)
+            console.log(cart);
+        
+        
+    });
     p.append(button);
     li.append(p);
 

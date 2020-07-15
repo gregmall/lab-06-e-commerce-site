@@ -1,6 +1,9 @@
-import cart from '../data/cart.js';
+
 import beers from '../data/beers.js';
-import { findById, orderTotal, toUSD } from '../utils.js';
+import { findById } from '../utils.js';
+import { orderTotal } from '../utils.js';
+import { toUSD } from '../utils.js';
+
 import { renderCartItem } from './render-cart-item.js';
 
 
@@ -16,6 +19,5 @@ for (let i = 0; i < cart.length; i++) {
 }
 
 const cartTotal = orderTotal(cart, beers);
-console.log (cart, beers);
-console.log(cartTotal);
+
 orderTotalCell.textContent = toUSD(cartTotal);
