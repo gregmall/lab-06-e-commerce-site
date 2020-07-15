@@ -38,6 +38,7 @@ h2 {
     justify-content: center;
 }
 .buy{
+   
     font-size: 30px;
     background-color: lime;
     box-shadow: 5px 10px #888888;
@@ -58,6 +59,7 @@ h2 {
     background-color: lime;
     font-size: 25px;
     box-shadow: 5px 10px #888888;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -70,6 +72,11 @@ p {
 }
 footer {
     
+}
+button {
+    font-size: 15px;
+    font-family: cursive;
+    background-color: yellow;
 }
 
   

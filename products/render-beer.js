@@ -36,7 +36,7 @@ function renderBeer(beer) {
     button.textContent = 'Add To Cart';
     button.value = beer.code;
     button.addEventListener('click', () =>{
-        console.log('ID: ', beer.id);
+        
         const cart = getCart();
         const beerInCart = findById(cart, beer.id);
 
@@ -52,10 +52,10 @@ function renderBeer(beer) {
             cart.push(newBeer);
         }
 
-            const stringCart = JSON.stringify(cart);
-            localStorage.setItem('CART', stringCart)
-            console.log(cart);
-        
+        const stringCart = JSON.stringify(cart);
+        localStorage.setItem('CART', stringCart)
+        console.log(cart);
+    
         
     });
     p.append(button);
