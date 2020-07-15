@@ -1,4 +1,5 @@
 import { findById, orderTotal, calcTotal, } from '../utils.js';
+import { renderCartItem } from '../cart/render-cart-item.js';
 import beers from '../data/beers.js';
 import cart from '../data/cart.js';
 const test = QUnit.test;
@@ -29,7 +30,7 @@ test('caluclates line total', assert => {
     const quantity = 20;
     const  price = 10;
 
-    const expected = 200;
+    const expected = 200; 
 
     const total = calcTotal(quantity, price);
 
@@ -48,4 +49,26 @@ test('calculates value of total order in cart', assert =>{
 
 
 });
+
+test ('renders a cart item', assert => {
+    
+    const cartItem = {
+       
+        id: 'pabst',
+
+        quantity: 3
+    };
+
+    const pabst = findById(beers, cartItem.id);
+    const expected = '<tr><td class="left">Pabst</td><td>3</td><td>2</td><td class="line-item-total">6</td></tr>';
+
+    const dom = renderCartItem(cartItem, pabst);
+    const html = dom.outerHTML;
+
+    assert.equal(html, expected);
+
+
+
+});
+
 
