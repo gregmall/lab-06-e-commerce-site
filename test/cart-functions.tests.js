@@ -28,29 +28,13 @@ test('caluclates line total', assert => {
 
     // Set up your arguments and expectations
     const quantity = 20;
-    const  price = 10;
+    const price = 10;
     
-    const quantity1 = 5;
-    const  price1 = 10;
+    const expected = 200;
     
-    const quantity2 = 30;
-    const  price2 = 10;
-    
-    const quantity3 = 20;
-    const  price3 = 5;
-
-    const expected = 200; 
-    
-    const expected1 = 50;
-    
-    const expected2 = 300;
-    
-    const expected3 = 100;
 
     const total = calcTotal(quantity, price);
-    const total1 = calcTotal(quantity1, price1);
-    const total2 = calcTotal(quantity2, price2);
-    const total3 = calcTotal(quantity3, price3);
+   
 
     assert.equal(total, expected);
 
