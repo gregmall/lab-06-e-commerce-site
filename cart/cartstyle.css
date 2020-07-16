@@ -19,6 +19,7 @@ header {
     
 }
 
+
 table {
     
     border: 1px solid black;
@@ -52,21 +53,23 @@ tfoot {
    
    background-color: white;
 }
-.button {
-
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
     background-color: seagreen;
     font-size: 20px;
+    border-radius: 8px;
 
 }
-.order-button {
-
+.order-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
     background-color: seagreen;
     font-size: 20px;
+    border-radius: 8px;
 
 }
-.clear {
-
+.clear:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
     background-color: seagreen;
     font-size: 20px;
-
+    border-radius: 4px;
 }
