@@ -4,10 +4,12 @@ body {
     
     font-family: 'Titillium Web', sans-serif;
     
+        margin: auto;
+        width: 50%;
+        border: 3px solid green;
+        padding: 10px;
+      
     
-
-
-
 }
 header {
     
@@ -19,9 +21,9 @@ header {
 
 table {
     
-    
     border: 1px solid black;
 }
+
 thead {
     background-color: seagreen;
 }
@@ -36,25 +38,14 @@ table th {
     text-align: right;
     padding: 10px;
     border: 2px solid black;
-
 }
 
 .align-left {
     text-align: left;
 }
 
-tbody {
-    background: white;
-}
-
-
-
 tbody td {
-    font-size: 0.9rem;
-}
-
-.line-item-total {
-    font-style: bold;
+    font-size: 15px;
 }
 
 tfoot {
@@ -62,14 +53,20 @@ tfoot {
    background-color: white;
 }
 .button {
+
     background-color: seagreen;
     font-size: 20px;
+
 }
 .order-button {
+
     background-color: seagreen;
     font-size: 20px;
+
 }
-.clear{
+.clear {
+
     background-color: seagreen;
     font-size: 20px;
+
 }

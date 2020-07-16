@@ -5,7 +5,12 @@ body {
     font-family: 'Titillium Web', sans-serif;
     background-image: url(/assets/beerflow.gif);
 
-
+  
+        margin: auto;
+        width: 100%
+        
+        padding: 10px;
+    
 
 }
 header {
