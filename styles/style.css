@@ -26,7 +26,7 @@ body {
 }
 
 main {
-    background-image: url(/assets/beerstore.jpeg);
+    background-image: url(../assets/beerstore.jpeg);
     display: flex;
     flex-direction: column;
     justify-content: center;
