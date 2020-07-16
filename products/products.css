@@ -5,7 +5,12 @@ body {
     font-family: 'Titillium Web', sans-serif;
     background-image: url(/assets/beerflow.gif);
 
-
+  
+        margin: auto;
+        width: 100%
+        
+        padding: 10px;
+    
 
 }
 header {
@@ -38,6 +43,7 @@ h2 {
     justify-content: center;
 }
 .buy{
+   
     font-size: 30px;
     background-color: lime;
     box-shadow: 5px 10px #888888;
@@ -58,6 +64,7 @@ h2 {
     background-color: lime;
     font-size: 25px;
     box-shadow: 5px 10px #888888;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -68,6 +75,17 @@ content {
 p {
     margin: var(--gutter);
 }
-
+footer {
+    margin: auto;
+    
+}
+button {
+    background-color: yellow;
+    
+    font-size: 15px;
+    font-family: cursive;
+    
+    border-radius: 8px;
+}
 
   

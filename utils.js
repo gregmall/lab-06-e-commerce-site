@@ -38,3 +38,9 @@ export function toUSD(number) {
 export function roundCurrency(amount) {
     return Math.round(amount * 100) / 100;
 }
+
+export function getCart() {
+    const firstCart = localStorage.getItem('CART');
+    const cart = JSON.parse(firstCart) || [];
+    return cart;
+}

@@ -4,10 +4,12 @@ body {
     
     font-family: 'Titillium Web', sans-serif;
     
+        margin: auto;
+        width: 50%;
+        border: 3px solid green;
+        padding: 10px;
+      
     
-
-
-
 }
 header {
     
@@ -17,11 +19,12 @@ header {
     
 }
 
+
 table {
-    
     
     border: 1px solid black;
 }
+
 thead {
     background-color: seagreen;
 }
@@ -36,32 +39,37 @@ table th {
     text-align: right;
     padding: 10px;
     border: 2px solid black;
-
 }
 
 .align-left {
     text-align: left;
 }
 
-tbody {
-    background: white;
-}
-
-
-
 tbody td {
-    font-size: 0.9rem;
-}
-
-.line-item-total {
-    font-style: bold;
+    font-size: 15px;
 }
 
 tfoot {
    
    background-color: white;
 }
-.button {
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
     background-color: seagreen;
     font-size: 20px;
+    border-radius: 8px;
+
+}
+.order-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: seagreen;
+    font-size: 20px;
+    border-radius: 8px;
+
+}
+.clear:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: seagreen;
+    font-size: 20px;
+    border-radius: 4px;
 }
