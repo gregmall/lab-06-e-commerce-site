@@ -43,6 +43,7 @@ orderButton.addEventListener('click', () => {
         alert('Thanks for your order!');
         localStorage.clear();
         location.reload();
+        window.location = '../index.html';
 
         
     }
