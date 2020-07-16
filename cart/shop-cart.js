@@ -6,6 +6,7 @@ import { renderCartItem } from './render-cart-item.js';
 const clearButton = document.getElementById('clear');
 const tbody = document.querySelector('tbody');
 const orderTotalCell = document.getElementById('total');
+const orderButton = document.getElementById('order');
 const cart = getCart();
 // rendering the page 
 for (let i = 0; i < cart.length; i++) {
@@ -28,6 +29,21 @@ clearButton.addEventListener('click', () => {
   
         
        
+
+
+});
+
+// Placing order button and clearing the cart
+orderButton.addEventListener('click', () =>  {
+    if (cart.length === 0) {
+        alert('Your cart is empty');
+
+    }else {
+    console.log('hello button');
+    alert('Thanks for your order!');
+    localStorage.clear();
+    location.reload();
+    }
 
 
 });
