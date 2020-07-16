@@ -53,8 +53,8 @@ function renderBeer(beer) {
         }
 
         const stringCart = JSON.stringify(cart);
-        localStorage.setItem('CART', stringCart)
-        console.log(cart);
+        localStorage.setItem('CART', stringCart);
+        
     
         
     });
