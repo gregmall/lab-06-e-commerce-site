@@ -46,7 +46,7 @@ main {
     font-family: cursive;
 }
 section {
-    background-image: url(/assets/beerfront.jpg);
+    background-image: url(../assets/beerfront.jpg);
     width: 500px;
     max-width: 80%;
     display: flex;
