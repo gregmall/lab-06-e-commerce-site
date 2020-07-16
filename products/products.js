@@ -9,4 +9,4 @@ for (let i = 0; i < beers.length; i++) {
     const el = renderBeer(beer);
     
     list.append(el);
-}
+}                              

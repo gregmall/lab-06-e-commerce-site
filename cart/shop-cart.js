@@ -34,15 +34,17 @@ clearButton.addEventListener('click', () => {
 });
 
 // Placing order button and clearing the cart
-orderButton.addEventListener('click', () =>  {
+orderButton.addEventListener('click', () => {
     if (cart.length === 0) {
         alert('Your cart is empty');
 
-    }else {
-    console.log('hello button');
-    alert('Thanks for your order!');
-    localStorage.clear();
-    location.reload();
+    } else {
+        
+        alert('Thanks for your order!');
+        localStorage.clear();
+        location.reload();
+
+        
     }
 
 
