@@ -3,6 +3,7 @@ import { renderBeer } from '../products/render-beer.js';
 console.log(beers);
 
 */
+import { getBeers } from '../utils.js'
 
 const myForm = document.getElementById('add-form');
 
@@ -19,8 +20,16 @@ myForm.addEventListener('submit', (event) => {
         image: formData.get('image'),
         description: formData.get('description'),
         category: formData.get('category'),
-        price :formData.get('price'),
+        price: formData.get('price')
 
-    }
-console.log(newBeer);
+    };
+    const existingBeer = getBeers();
+    existingBeer.push(newBeer); 
+
+    const stringBeers = JSON.stringify(newBeer);
+    localStorage.setItem('BEER', stringBeers);
+    
+    window.location = './products/index.html';
+    
+ 
 });  

@@ -1,3 +1,4 @@
+import { beers } from './data/beers.js';
 export function findById(itemsArray, productId){
     let itemMatch = null;
     for (let i = 0; i < itemsArray.length; i++) {
@@ -46,16 +47,16 @@ export function getCart() {
 }
 
 export function getBeers(){
-let beers = JSON.parse(localStorage.getItem('BEER');
+    let beersHere = JSON.parse(localStorage.getItem('BEER'));
 
- 
-if (!beers){
-    localStorage.setItem('BEER', JSON.stringify(beers));
-}
-
-const list = document.getElementById('beers');
-
-console.log(list);
+    if (!beersHere){
+        localStorage.setItem('BEER', JSON.stringify(beers));
 
 
+
+        beersHere = JSON.parse(localStorage.getItem('BEER'));
+    }
+
+
+    return beersHere;
 }
