@@ -1,0 +1,30 @@
+
+body {
+background-color: gold;
+    
+}
+header {
+    
+ background-color: green;
+}
+
+label {
+    display: block;
+}
+
+button {
+    background-color: honeydew;
+    font-size: 20px;
+    border-radius: 8px;
+}
+#beers   {
+    background-color:white;
+    border: solid 2px black;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 5px 10px #888888;
+}
+
+#beer img {
+    height: 100px;
+    width: 100px;

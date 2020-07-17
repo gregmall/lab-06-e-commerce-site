@@ -44,3 +44,18 @@ export function getCart() {
     const cart = JSON.parse(firstCart) || [];
     return cart;
 }
+
+export function getBeers(){
+let beers = JSON.parse(localStorage.getItem('BEER');
+
+ 
+if (!beers){
+    localStorage.setItem('BEER', JSON.stringify(beers));
+}
+
+const list = document.getElementById('beers');
+
+console.log(list);
+
+
+}
