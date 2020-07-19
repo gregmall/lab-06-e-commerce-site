@@ -1,5 +1,9 @@
-import beers from '../data/beers.js';
+
 import renderBeer from './render-beer.js';
+import { getBeers } from '../utils.js';
+
+const beers = getBeers();
+
 
 const list = document.getElementById('beer');
 

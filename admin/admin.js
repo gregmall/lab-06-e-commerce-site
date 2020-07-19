@@ -1,15 +1,14 @@
-/*import beers from '../data/beers.js';
-import { renderBeer } from '../products/render-beer.js';
-console.log(beers);
 
-*/
-import { getBeers } from '../utils.js'
+import { getBeers } from '../utils.js';
+
+
+
 
 const myForm = document.getElementById('add-form');
 
-myForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    console.log(Date.now());
+myForm.addEventListener('submit', e => {
+    e.preventDefault();
+   
     const formData = new FormData(myForm);
 
     const newBeer = {
@@ -26,7 +25,7 @@ myForm.addEventListener('submit', (event) => {
     const existingBeer = getBeers();
     existingBeer.push(newBeer); 
 
-    const stringBeers = JSON.stringify(newBeer);
+    const stringBeers = JSON.stringify(existingBeer);
     localStorage.setItem('BEER', stringBeers);
     
     window.location = './products/index.html';

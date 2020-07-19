@@ -1,4 +1,4 @@
-import { beers } from './data/beers.js';
+import beers from './data/beers.js';
 export function findById(itemsArray, productId){
     let itemMatch = null;
     for (let i = 0; i < itemsArray.length; i++) {
@@ -47,14 +47,14 @@ export function getCart() {
 }
 
 export function getBeers(){
-    let beersHere = JSON.parse(localStorage.getItem('BEER'));
+    let beersHere = JSON.parse(localStorage.getItem('BEERS'));
 
     if (!beersHere){
-        localStorage.setItem('BEER', JSON.stringify(beers));
+        localStorage.setItem('BEERS', JSON.stringify(beers));
 
 
 
-        beersHere = JSON.parse(localStorage.getItem('BEER'));
+        beersHere = JSON.parse(localStorage.getItem('BEERS'));
     }
 
 
