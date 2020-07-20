@@ -7,8 +7,8 @@ import { getBeers } from '../utils.js';
 const myForm = document.getElementById('add-form');
 
 myForm.addEventListener('submit', e => {
-    e.preventDefault();
-   
+    
+    
     const formData = new FormData(myForm);
 
     const newBeer = {
@@ -20,8 +20,9 @@ myForm.addEventListener('submit', e => {
         description: formData.get('description'),
         category: formData.get('category'),
         price: formData.get('price')
-
+      
     };
+    e.preventDefault();
     const existingBeer = getBeers();
     existingBeer.push(newBeer); 
 
