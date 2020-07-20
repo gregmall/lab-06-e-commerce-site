@@ -7,7 +7,7 @@ import { getBeers } from '../utils.js';
 const myForm = document.getElementById('add-form');
 
 myForm.addEventListener('submit', e => {
-    
+    e.preventDefault();
     
     const formData = new FormData(myForm);
 
@@ -22,14 +22,14 @@ myForm.addEventListener('submit', e => {
         price: formData.get('price')
       
     };
-    e.preventDefault();
+    
     const existingBeer = getBeers();
     existingBeer.push(newBeer); 
-
+console.log(newBeer);
     const stringBeers = JSON.stringify(existingBeer);
     localStorage.setItem('BEER', stringBeers);
     
-    window.location = './products/index.html';
+    window.location = '../products/index.html';
     
  
 });  
