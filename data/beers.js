@@ -3,7 +3,7 @@ const PBR = {
     name: 'Pabst',
     image: 'pbr.jpg',
     description: 'A cheap beer with a hipster reputation',
-    category: 'american-lager',
+    category: 'lager',
     price: 2.00
     
 };
@@ -35,6 +35,7 @@ const Modelo = {
     name: 'Modelo',
     image: 'modelo.jpg',
     description: 'A mexican style lager beer',
+    category: 'lager',
     price: 3.00
 
 };
@@ -44,6 +45,7 @@ const Hamms = {
     name: 'Hamms',
     image: 'hamms.jpg',
     description: 'An american cheap beer.  DRINK IT',
+    category: 'lager',
     price: 1.50
 
 };

@@ -20,7 +20,7 @@ myForm.addEventListener('submit', e => {
         image: formData.get('image'),
         description: formData.get('description'),
         category: formData.get('category'),
-        price: formData.get(Number('price'))
+        price: formData.get('price')
       
     };
      
@@ -28,10 +28,11 @@ myForm.addEventListener('submit', e => {
     
     existingBeer.push(newBeer); 
     console.log(existingBeer);
-
+debugger
     const stringBeers = JSON.stringify(existingBeer);
     localStorage.setItem('BEERS', stringBeers);
-    
+console.log(stringBeers);
+debugger
     window.location = '../products/products.html';
     
  

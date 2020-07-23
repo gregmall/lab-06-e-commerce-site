@@ -8,7 +8,7 @@ export function renderBeer(beer) {
     h3Li.textContent = beer.name;
     li.append(h3Li);
 
-    li.classList.add(beer.category);
+    
     
     li.title = beer.description;
     
@@ -26,7 +26,7 @@ export function renderBeer(beer) {
     li.append(imgLi);
 
     
-    const usd = '$' + beer.price.toFixed(2);
+    const usd = '$' + beer.price;
    
 
     
